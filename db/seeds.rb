@@ -10,12 +10,12 @@ User.destroy_all
 u = User.create :email => "joel@ga.com", :password => "chicken"
 Airplane.destroy_all
 a = Airplane.create :name => "747", :rows => "4", :columns => "24"
-a = Airplane.create :name => "737", :rows => "4", :columns => "34"
-a = Airplane.create :name => "737", :rows => "3", :columns => "30"
-a = Airplane.create :name => "737", :rows => "3", :columns => "30"
-a = Airplane.create :name => "979", :rows => "4", :columns => "54"
-a = Airplane.create :name => "787", :rows => "4", :columns => "22"
-a = Airplane.create :name => "A380", :rows => "4", :columns => "56"
+a1 = Airplane.create :name => "737", :rows => "4", :columns => "34"
+a2 = Airplane.create :name => "737", :rows => "3", :columns => "30"
+a3 = Airplane.create :name => "737", :rows => "3", :columns => "30"
+a4 = Airplane.create :name => "979", :rows => "4", :columns => "54"
+a5 = Airplane.create :name => "787", :rows => "4", :columns => "22"
+a6 = Airplane.create :name => "A380", :rows => "4", :columns => "56"
 
 Flight.destroy_all
 f = Flight.create :date => "2020-07-07", :flightnumber => "1231", :fromto => "BNE >> SYD", :plane => "22", :seats => "182"
