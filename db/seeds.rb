@@ -8,6 +8,7 @@
 
 User.destroy_all
 u = User.create :email => "joel@ga.com", :password => "chicken"
+
 Airplane.destroy_all
 a = Airplane.create :name => "747", :rows => "4", :columns => "24"
 a1 = Airplane.create :name => "737", :rows => "4", :columns => "34"
@@ -19,9 +20,6 @@ a6 = Airplane.create :name => "A380", :rows => "4", :columns => "56"
 
 Flight.destroy_all
 f = Flight.create :date => "2020-07-07", :flightnumber => "1231", :fromto => "BNE >> SYD", :plane => "22", :seats => "182"
-Reservation.destroy_all
-r = Reservation.create
-
 f0 = Flight.create :date => "2020-07-07", :flightnumber => "1231", :fromto => "BNE >> SYD", :plane => "22", :seats => "182"
 f1 = Flight.create :date => "2020-07-09", :flightnumber => "5555", :fromto => "MEL >> SYD", :plane => "22", :seats => "182"
 f2 = Flight.create :date => "2020-07-09", :flightnumber => "1233", :fromto => "SYD >> PER", :plane => "22", :seats => "182"
@@ -43,24 +41,26 @@ f17 = Flight.create :date => "2020-07-19", :flightnumber => "6354", :fromto => "
 f18 = Flight.create :date => "2020-07-20", :flightnumber => "7647", :fromto => "HOB >> ADL", :plane => "22", :seats => "182"
 f19 = Flight.create :date => "2020-07-21", :flightnumber => "6543", :fromto => "DAR >> HOB", :plane => "22", :seats => "182"
 
+Reservation.destroy_all
+r = Reservation.create
 
-a.flights << f 
+a.flights << f
 a.flights << f7
 a.flights << f14
-a1.flights << f1 
-a1.flights << f8 
+a1.flights << f1
+a1.flights << f8
 a1.flights << f15
-a2.flights << f2 
-a2.flights << f9 
+a2.flights << f2
+a2.flights << f9
 a2.flights << f16
-a3.flights << f3 
-a3.flights << f10 
+a3.flights << f3
+a3.flights << f10
 a3.flights << f17
-a4.flights << f4 
+a4.flights << f4
 a4.flights << f11
 a4.flights << f18
 a5.flights << f5
-a5.flights << f12 
+a5.flights << f12
 a5.flights << f19
 a6.flights << f6
 a6.flights << f13
