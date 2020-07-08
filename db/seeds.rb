@@ -44,13 +44,26 @@ f18 = Flight.create :date => "2020-07-20", :flightnumber => "7647", :fromto => "
 f19 = Flight.create :date => "2020-07-21", :flightnumber => "6543", :fromto => "DAR >> HOB", :plane => "22", :seats => "182"
 
 
-a.flights << f, f7, f14
-a1.flights << f1, f8, f15
-a2.flights << f2, f9, f16
-a3.flights << f3, f10, f17
-a4.flights << f4, f11, f18
-a5.flights << f5, f12, f19
-a6.flights << f6, f13
+a.flights << f 
+a.flights << f7
+a.flights << f14
+a1.flights << f1 
+a1.flights << f8 
+a1.flights << f15
+a2.flights << f2 
+a2.flights << f9 
+a2.flights << f16
+a3.flights << f3 
+a3.flights << f10 
+a3.flights << f17
+a4.flights << f4 
+a4.flights << f11
+a4.flights << f18
+a5.flights << f5
+a5.flights << f12 
+a5.flights << f19
+a6.flights << f6
+a6.flights << f13
 
 u.reservations << r
 u.reservations << r
