@@ -20,7 +20,6 @@ a6 = Airplane.create :name => "A380", :rows => "4", :columns => "56"
 
 Flight.destroy_all
 f = Flight.create :date => "2020-07-07", :flightnumber => "1231", :fromto => "BNE >> SYD", :plane => "22", :seats => "182"
-f0 = Flight.create :date => "2020-07-07", :flightnumber => "1231", :fromto => "BNE >> SYD", :plane => "22", :seats => "182"
 f1 = Flight.create :date => "2020-07-09", :flightnumber => "5555", :fromto => "MEL >> SYD", :plane => "22", :seats => "182"
 f2 = Flight.create :date => "2020-07-09", :flightnumber => "1233", :fromto => "SYD >> PER", :plane => "22", :seats => "182"
 f3 = Flight.create :date => "2020-07-10", :flightnumber => "1231", :fromto => "BNE >> SYD", :plane => "22", :seats => "182"
